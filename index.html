@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Oluwaloni James Protfolio</title>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="assets/20240806_182134.png" class="logo" alt="" />
+          <ul id="side-menu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#Portfolio">Portfolio</a></li>
+            <li><a href="#contact">contact</a></li>
+            <i id="fas" class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i id="fas" class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+
+        <div class="header-text">
+            <div><p>UI/UX Designer</p>
+                <h1>
+                  Hi, I'm <span>James</span> <br />
+                  From Nigeria.
+                </h1>
+                </div>
+        <div>  <img class="profile" src="assets/bg.png" alt=""></div>
+        </div>
+      </div>
+    </div>
+    <!-- About -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="assets/DSC_2096 copy.jpg" alt="" />
+          </div>
+          <div class="about-col-1">
+            <h1 class="sub-title">About Me</h1>
+            <p class="lorem">
+                I am a passionate UI/UX Designer and Full Stack Web App Developer with a diploma in Full Stack Web Development from FemTech IT Institute. With hands-on experience in HTML, CSS, Tailwind CSS, JavaScript, Node.js, MySQL, React.js, TypeScript, and React Native, I specialize in creating engaging user experiences and robust web applications. I thrive on transforming ideas into functional designs and code, ensuring both aesthetic appeal and seamless functionality.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>UI/UX</span><br />
+                  Designer Web/App interfaces
+                </li>
+                <li>
+                  <span>Web Development</span><br />
+                  Web app Development
+                </li>
+                <li>
+                  <span>App Development</span><br />
+                  Building Android/iOS apps
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>2019 - Current</span><br />
+                  studying and learning UI/UX Design
+                </li>
+                <li>
+                  <span>2024</span><br />
+                  Studied Web/App Development at Femtech IT Training Institute
+                </li>
+                <li>
+                  <span>2024</span><br />
+                  Built a web/App for food recipes and also worked on the
+                  frontend aspect of a student performance grading Website
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2017 - 2023</span><br />
+                  Schooled at MESL Secondary Staff School Life-camp, Jebba-North
+                </li>
+                <li>
+                  <span>2024</span><br />
+                  Diploma from Femtech IT Training Institute
+                </li>
+                <li>
+                  <span>2024 - Current</span><br />
+                  Studying Computer Science at .....
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- services -->
+
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Design</h2>
+            <p>
+                Creating visually captivating and user-friendly websites is my expertise. I blend aesthetics with functionality to design sites that not only look great but also provide an exceptional user experience. From concept to launch, I focus on clean design, intuitive navigation, and responsive layouts that work seamlessly across all devices. Let’s bring your online presence to life with a website that stands out and delivers results.
+            </p>
+            <a href="https://www.fiverr.com/">Learn More</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-crop-simple"></i>
+            <h2>UI/UX Design</h2>
+            <p>
+                Crafting visually stunning and highly intuitive user interfaces is my passion. I focus on creating designs that enhance user experience through thoughtful layout, effective navigation, and engaging visuals. By blending creativity with user-centered design principles, I deliver solutions that are not only aesthetically pleasing but also functional and easy to use. From wireframes to final designs, I ensure every element aligns with your brand and meets your users’ needs. Let’s make your digital experience memorable and impactful.
+            </p>
+            <a href="https://elements.envato.com/?gad_source=1&gclid=CjwKCAjwk8e1BhALEiwAc8MHiOjMkS71_2MfoHd912smj8Xcsp2CF3B2TIQj3vkW3xOW-GKEUzI-0hoCnjgQAvD_BwE">Learn More</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-app-store"></i>
+            <h2>App Design</h2>
+            <p>
+                Transforming ideas into innovative, high-performance mobile and web applications is our specialty. With a focus on user-centric design and cutting-edge technology, I craft solutions that not only meet but exceed client expectations. From concept and wireframing to development and deployment, each project is approached with meticulous attention to detail and a commitment to delivering seamless, intuitive user experiences
+            </p>
+            <a href="https://developer.android.com/studio">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Portfolio -->
+
+    <div id="Portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img class="img-special" src="assets/Screenshot (845).png" alt="" />
+            <div class="layer">
+              <h3>Food Recipe Web App</h3>
+              <p>
+                Explore, save, and share delicious recipes with ease. Our app offers a vast collection of recipes, intuitive search filters, and personalized recommendations to inspire your next culinary adventure. Cook up something amazing today!
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="assets/work-2.png" alt="" />
+            <div class="layer">
+                <h3>Music App</h3>
+                <p>
+                    Discover, stream, and organize your favorite tunes with our intuitive app. Enjoy a personalized listening experience with smart playlists, high-quality sound, and seamless integration across devices. Your music, your way.
+                </p>
+                <a href="#"
+                  ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                ></a>
+                </div>
+          </div>
+          <div class="work">
+            <img src="assets/work-3.png" alt="" />
+            <div class="layer">
+                <h3>Online Shopping App</h3>
+                <p>
+                    Seamlessly browse, compare, and purchase your favorite products with ease. Our user-friendly interface and secure payment options ensure a smooth shopping experience from start to finish. Shop anytime, anywhere!
+                </p>
+                <a href="#"
+                  ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                ></a>
+          </div>
+        </div>
+      </div>
+      <div>
+        <a href="#" class="btn">See More</a>
+      </div>
+    </div>
+<!-- Contact -->
+ <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p> <i class="fa-solid fa-paper-plane"></i> oluwalonijames@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i> 08142775676</p>
+                <div class="social-icons">
+<a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+<a href="#"><i class="fa-brands fa-twitter-square"></i></a>
+<a href="#"><i class="fa-brands fa-instagram"></i></a>
+<a href="#"><i class="fa-brands fa-linkedin"></i></a>
+
+                </div>
+                <a href="assets/Oluwaloni-James-CV.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" id="" placeholder="Your name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                
+                <textarea name="Message" rows="6" placeholder="Your Message" id=""></textarea>       
+                <button type="submit" class="btn btn2">Submit</button>
+         </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright @ Oluwaloni James.</p>
+    </div>
+ </div>
+
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("side-menu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyi6cgF7OLyQfy4FiP7xyMdfKsmUTDfAgaRw2zFmCe0Zvt1fW18SAZs2-duSRku1M6f/exec'
+    const form = document.forms['submit-to-google-sheet']
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => alert('Success!', response), window.location.href = "#")
+        .catch(error => alert('Error!', error.message))
+    })
+  </script>
+  </body>
+</html>
