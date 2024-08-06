@@ -9,4 +9,5 @@ This repository contains the source code for a responsive website built with HTM
 
 ## Technologies Used ##
 HTML: For structuring the content.
+
 CSS: For styling and layout, ensuring a responsive design.
