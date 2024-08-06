@@ -545,7 +545,7 @@ nav #fas {
 
   .lorem {
     font-size: 14px;
-    width: 330px;
+    width: 310px;
   }
 
   #header {
@@ -563,8 +563,8 @@ nav #fas {
 
   .profile {
     z-index: 1;
-    top: 110px;
+    top: 90px;
     width: 500px;
-    right: -20px;
+    right: -40px;
   }
 }
