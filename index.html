@@ -16,21 +16,26 @@
 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <title>Oluwaloni James Protfolio</title>
   </head>
-  <body>
+  <body id="current">
     <div id="header">
       <div class="container">
         <nav>
-          <img src="assets/20240806_205805.png" class="logo" alt="" />
+          <img  src="assets/20240806_205805.png" class="logo" alt="" />
+          <img class="light-logo" src="assets/20240806_235532.png" alt="">
           <ul id="side-menu">
             <li><a href="#header">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#services">Services</a></li>
             <li><a href="#Portfolio">Portfolio</a></li>
             <li><a href="#contact">contact</a></li>
+            <li id="light"><span onclick="lightmode()"><i class="fa-solid fa-sun"></i> Light Mode</span></li>
+            <li id="dark" onclick="darkmode()"><span>Dark Mode</span></li>
             <i id="fas" class="fa-solid fa-xmark" onclick="closemenu()"></i>
           </ul>
           <i id="fas" class="fa-solid fa-bars" onclick="openmenu()"></i>
         </nav>
+        
+        
 
         <div class="header-text">
             <div><p>UI/UX Designer</p>
@@ -268,6 +273,21 @@
         .then(response => alert('Success!', response), window.location.href = "#")
         .catch(error => alert('Error!', error.message))
     })
+  </script>
+
+  <script>
+    body = document.getElementById("current");
+    light = document.getElementById("light");
+    function lightmode(){
+        body.classList.add("white");
+        light.classList.add("disappear");
+        document.getElementById("dark").classList.add("exposed");
+    }
+    function darkmode() {
+        body.classList.remove("white")
+        light.classList.remove("disappear");
+        document.getElementById("dark").classList.remove("exposed");
+    }
   </script>
   </body>
 </html>
