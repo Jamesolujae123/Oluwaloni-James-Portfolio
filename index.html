@@ -23,13 +23,13 @@
           <img  src="assets/20240806_205805.png" class="logo" alt="" />
           <img class="light-logo" src="assets/20240806_235532.png" alt="">
           <ul id="side-menu">
-            <li><a href="#header">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#Portfolio">Portfolio</a></li>
-            <li><a href="#contact">contact</a></li>
-            <li id="light"><span onclick="lightmode()"><i class="fa-solid fa-sun"></i> Light Mode</span></li>
-            <li id="dark" onclick="darkmode()"><span><i class="fa-solid fa-moon"></i> Dark Mode</span></li>
+            <li onclick="closemenu()"><a href="#header">Home</a></li>
+            <li onclick="closemenu()"><a href="#about">About</a></li>
+            <li onclick="closemenu()"><a href="#services">Services</a></li>
+            <li onclick="closemenu()"><a href="#Portfolio">Portfolio</a></li>
+            <li onclick="closemenu()"><a href="#contact">contact</a></li>
+            <li onclick="closemenu()" id="light"><span onclick="lightmode()"><i class="fa-solid fa-sun"></i> Light Mode</span></li>
+            <li onclick="closemenu()" id="dark" onclick="darkmode()"><span><i class="fa-solid fa-moon"></i> Dark Mode</span></li>
             <i id="fas" class="fa-solid fa-xmark" onclick="closemenu()"></i>
           </ul>
           <i id="fas" class="fa-solid fa-bars" onclick="openmenu()"></i>
