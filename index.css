@@ -563,8 +563,8 @@ nav #fas {
 
   .profile {
     z-index: 1;
-    top: 150px;
+    top: 110px;
     width: 500px;
-    right: 20px;
+    right: -20px;
   }
 }
