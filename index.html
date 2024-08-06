@@ -29,7 +29,7 @@
             <li><a href="#Portfolio">Portfolio</a></li>
             <li><a href="#contact">contact</a></li>
             <li onclick="closemenu()" id="light"><span onclick="lightmode()"><i class="fa-solid fa-sun"></i> Light Mode</span></li>
-            <li onclick="closemenu()" id="dark" onclick="darkmode()"><span><i class="fa-solid fa-moon"></i> Dark Mode</span></li>
+            <li id="dark" onclick="darkmode()"><span><i class="fa-solid fa-moon"></i> Dark Mode</span></li>
             <i id="fas" class="fa-solid fa-xmark" onclick="closemenu()"></i>
           </ul>
           <i id="fas" class="fa-solid fa-bars" onclick="openmenu()"></i>
@@ -276,6 +276,7 @@
   </script>
 
   <script>
+      var sidemenu = document.getElementById("side-menu");
     body = document.getElementById("current");
     light = document.getElementById("light");
     function lightmode(){
@@ -287,6 +288,7 @@
         body.classList.remove("white")
         light.classList.remove("disappear");
         document.getElementById("dark").classList.remove("exposed");
+        sidemenu.style.right = "-200px";
     }
   </script>
   </body>
