@@ -368,9 +368,24 @@ nav ul li a:hover::after {
   -o-transform: translateY(-10px);
 }
 
-#current.white #services .services-list div p:hover {
+
+#current.white #services .services-list div p {
   color: white;
 }
+
+#current.white .services-list div {
+  background: gray;
+}
+
+#current.white .services-list div:hover {
+  background: #ff004f;
+  transform: translateY(-10px);
+  -webkit-transform: translateY(-10px);
+  -moz-transform: translateY(-10px);
+  -ms-transform: translateY(-10px);
+  -o-transform: translateY(-10px);
+}
+
 
 /*  portfolio */
 
