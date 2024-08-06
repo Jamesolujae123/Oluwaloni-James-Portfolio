@@ -8,9 +8,75 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
+#current {
   background-color: black;
   color: white;
+}
+
+#current.white {
+  background-color: white;
+  color: black;
+}
+
+#current.white li {
+  color: black;
+}
+
+#current.white nav ul li a {
+  color: black;
+}
+
+#current.white .sub-title {
+  color: black;
+}
+
+#current.white .services-list div p {
+  color: #ababab;
+}
+
+#current.white .services-list div h2 {
+  color: white;
+}
+
+#current.white .services-list div i {
+  color: white;
+}
+
+#current.white #Portfolio .work-list h3 {
+  color: white;
+}
+
+#current.white #Portfolio .work-list p {
+  color: white;
+}
+
+#current.white #Portfolio .btn {
+  background: #ff004f;
+}
+
+#current.white #contact .contact-right input {
+  background: #ababab;
+}
+
+#current.white #contact .contact-right textarea {
+  background: #ababab;
+}
+
+#current .light-logo {
+  display: none;
+}
+
+#current.white .logo {
+  display: none;
+}
+
+#current.white .light-logo {
+  width: 140px;
+  display: block;
+}
+
+#current.white .copyright {
+  background: white;
 }
 
 #header {
@@ -20,12 +86,56 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+#light {
+  padding-inline: 10px;
+  padding-block: 10px;
+  border: 1px solid #ababab;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+.dark {
+  display: none;
+}
+
+#light:hover {
+  background: #ababab;
+}
+
+#dark {
+  display: none;
+}
+
+#dark.exposed {
+  display: inline-block;
+  width: max-content;
+  padding-inline: 10px;
+  padding-block: 10px;
+  border: 1px solid #ababab;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+#dark.exposed:hover {
+  background: #ababab;
+}
+
 .profile {
   position: absolute;
   top: 120px;
   width: 900px;
   right: 0;
   z-index: -1;
+}
+
+#light.disappear {
+  display: none;
 }
 
 .container {
@@ -258,6 +368,10 @@ nav ul li a:hover::after {
   -o-transform: translateY(-10px);
 }
 
+#current.white #services .services-list div p:hover {
+  color: white;
+}
+
 /*  portfolio */
 
 #Portfolio {
@@ -488,9 +602,7 @@ nav #fas {
 }
 
 @media screen and (max-width: 600px) {
-  #header {
-    background-image: url("assets/phone-background.png");
-  }
+
   .header-text {
     margin-top: 100%;
     font-size: 17px;
